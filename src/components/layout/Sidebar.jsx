@@ -1,9 +1,5 @@
-import React from 'react'
-
 function Sidebar() {
-  return (
-    <div className="bg-black w-[368px] h-screen flex"></div>
-  )
+  return <div className="bg-black w-[368px] h-screen flex">Dum bullar</div>;
 }
 
-export default Sidebar
+export default Sidebar;

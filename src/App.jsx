@@ -1,4 +1,3 @@
-import React from "react";
 import Sidebar from "./components/layout/Sidebar";
 
 function App() {
@@ -8,10 +7,5 @@ function App() {
     </>
   );
 }
-
-
-
-
-
 
 export default App;
