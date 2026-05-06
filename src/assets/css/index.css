@@ -15,3 +15,16 @@ body {
   background-color: #1f5a3a;
   color: white; /* optional (fon qorong‘i bo‘lsa yaxshi ko‘rinadi) */
 }
+/* Main layout */
+.main {
+  display: flex;
+  width: 100%;
+  gap: 0;
+}
+
+.main > div:last-child {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  background: #1f5a3a;
+}

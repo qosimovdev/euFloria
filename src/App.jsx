@@ -12,13 +12,16 @@ function App() {
       <Header />
       <main className="main">
         <Sidebar />
-        <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Delivery" element={<Delivery />} />
-          <Route path="/Pickup" element={<Pickup />} />
-          <Route path="/Catalog" element={<Catalog />} />
-          <Route path="/Cart" element={<Cart />} />
-        </Routes>
+        <div className="flex-1 overflow-y-auto w-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Delivery" element={<Delivery />} />
+            <Route path="/Pickup" element={<Pickup />} />
+            <Route path="/Catalog" element={<Catalog />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+        </div>
       </main>
     </>
   );
