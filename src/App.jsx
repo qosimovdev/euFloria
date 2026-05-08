@@ -15,11 +15,11 @@ function App() {
         <div className="flex-1 overflow-y-auto w-full">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Delivery" element={<Delivery />} />
-            <Route path="/Pickup" element={<Pickup />} />
-            <Route path="/Catalog" element={<Catalog />} />
-            <Route path="/Cart" element={<Cart />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/pickup" element={<Pickup />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </div>
       </main>

@@ -12,6 +12,7 @@ export default function Home() {
           <p className="mb-6 text-sm uppercase tracking-[0.35em] text-black">
             Buy your dream plants
           </p>
+          <br />
           <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
             Buy your
             <br />
