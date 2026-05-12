@@ -23,7 +23,7 @@ export default function Cart() {
   const total = subtotal + tax + shipping;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8 font-sans">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8 font-sans rounded-2xl">
       <div className="flex gap-10 max-w-4xl w-full">
        
         <div className="flex-1">
