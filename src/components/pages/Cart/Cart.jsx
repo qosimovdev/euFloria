@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Kaktus from "../../../assets/imgs/png/kaktus.png"
-import Crop from "../../../assets/imgs/png/crop.png"
-import Minikaktus from "../../../assets/imgs/png/mini-kaktus.png"
+import Kaktus from "../../../assets/imgs/png/kaktus.png";
+import Crop from "../../../assets/imgs/png/crop.png";
+import Minikaktus from "../../../assets/imgs/png/mini-kaktus.png";
 
 const orderItems = [
   { id: 1, img: Kaktus, name: "Cactus", price: 8.0 },
@@ -27,16 +27,24 @@ export default function Cart() {
   return (
     <div className="h-11/12 bg-gray-50 flex items-center justify-center p-8 font-sans rounded-2xl">
       <div className="flex gap-10 max-w-4xl w-full">
-       
         <div className="flex-1">
-         
           <div className="flex items-center gap-3 mb-8 text-sm font-medium">
             <span className="text-gray-500">Account</span>
             <div className="flex items-center gap-1">
               <div className="w-8 h-px bg-gray-300" />
               <div className="w-5 h-5 rounded-full bg-[#1a5c38] flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-3 h-3 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
               <div className="w-8 h-px bg-gray-300" />
@@ -45,18 +53,27 @@ export default function Cart() {
             <div className="flex items-center gap-1">
               <div className="w-8 h-px bg-gray-300" />
               <div className="w-5 h-5 rounded-full bg-[#1a5c38] flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-3 h-3 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
               <div className="w-8 h-px bg-gray-300" />
             </div>
             <span className="text-[#1a5c38] font-semibold">Payment</span>
           </div>
-
-          <h2 className="text-xl font-bold text-gray-900 mb-6">Payment Details</h2>
-
-          
+          <h2 className="text-xl font-bold text-gray-900 mb-6">
+            Payment Details
+          </h2>
           <div className="flex items-center justify-between mb-5">
             <label className="text-sm text-gray-700">Use saved card</label>
             <div className="relative">
@@ -64,13 +81,16 @@ export default function Cart() {
                 <option>Mastercard ending 234</option>
                 <option>Visa ending 567</option>
               </select>
-              <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 text-xs">▼</div>
+              <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 text-xs">
+                ▼
+              </div>
             </div>
           </div>
-
-         =
+          =
           <div className="mb-4">
-            <label className="block text-sm text-gray-700 mb-1">Name on card</label>
+            <label className="block text-sm text-gray-700 mb-1">
+              Name on card
+            </label>
             <div className="relative">
               <input
                 value={cardName}
@@ -79,16 +99,26 @@ export default function Cart() {
                 placeholder="John Smith"
               />
               <div className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-[#1a5c38] flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-3 h-3 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
             </div>
           </div>
-
-         
           <div className="mb-4">
-            <label className="block text-sm text-gray-700 mb-1">Card number</label>
+            <label className="block text-sm text-gray-700 mb-1">
+              Card number
+            </label>
             <input
               value={cardNumber}
               onChange={(e) => setCardNumber(e.target.value)}
@@ -96,11 +126,11 @@ export default function Cart() {
               placeholder="123 - 456 - 789 - 000"
             />
           </div>
-
-         
           <div className="flex gap-4 mb-8">
             <div className="flex-1">
-              <label className="block text-sm text-gray-700 mb-1">Expiration</label>
+              <label className="block text-sm text-gray-700 mb-1">
+                Expiration
+              </label>
               <div className="flex items-center bg-[#e8f5e9] rounded-lg px-4 py-3 gap-2">
                 <input
                   value={expMonth}
@@ -120,7 +150,9 @@ export default function Cart() {
             <div className="flex-1">
               <label className="block text-sm text-gray-700 mb-1 flex items-center gap-1">
                 CVC
-                <span className="w-4 h-4 rounded-full border border-gray-400 text-gray-400 text-xs flex items-center justify-center cursor-help">?</span>
+                <span className="w-4 h-4 rounded-full border border-gray-400 text-gray-400 text-xs flex items-center justify-center cursor-help">
+                  ?
+                </span>
               </label>
               <input
                 value={cvc}
@@ -131,7 +163,6 @@ export default function Cart() {
               />
             </div>
           </div>
-
           <div className="border-t border-gray-200 pt-6 flex items-center justify-between">
             <button className="text-sm text-gray-600 hover:text-gray-800 transition-colors">
               Cancel order
@@ -142,11 +173,12 @@ export default function Cart() {
           </div>
         </div>
 
-       
-        <div style={{marginLeft: "4rem"}} className="  w-82 bg-[#1a5c38] rounded-2xl p-5 text-white ">
+        <div
+          style={{ marginLeft: "4rem" }}
+          className="  w-82 bg-[#1a5c38] rounded-2xl p-5 text-white "
+        >
           <h3 className="font-semibold text-lg mb-4">Order Summary</h3>
 
-        
           <div className="relative bg-white rounded-xl overflow-hidden h-40 mb-3">
             {orderItems.map((item, i) => (
               <img
@@ -158,7 +190,7 @@ export default function Cart() {
                 }`}
               />
             ))}
-          
+
             <div className="absolute inset-0 flex">
               <div className="w-8 bg-black/10 rounded-l-xl" />
               <div className="flex-1" />
@@ -166,7 +198,6 @@ export default function Cart() {
             </div>
           </div>
 
-          
           <div className="flex justify-center gap-2 mb-4">
             {orderItems.map((_, i) => (
               <button
@@ -179,7 +210,6 @@ export default function Cart() {
             ))}
           </div>
 
-          
           <div className="flex items-center justify-between mb-4">
             <span className="font-semibold text-sm">
               {orderItems[activeSlide]?.name || "Cactus"}
@@ -216,7 +246,6 @@ export default function Cart() {
             </button>
           </div>
 
-         
           <div className="space-y-2 text-sm border-t border-white/20 pt-4">
             <div className="flex justify-between text-white/80">
               <span>Sub total</span>
