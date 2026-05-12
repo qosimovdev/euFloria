@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Gul from "../../../assets/imgs/png/hero.png";  
+import Gul from "../../../assets/imgs/png/gul.png";  
 const plants = [
   {
     id: 1,

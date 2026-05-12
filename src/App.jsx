@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/layout/Sidebar";
-import Header from "./components/layout/Header";
 import Delivery from "./components/pages/Delivery/Delivery";
 import Home from "./components/pages/Home/Home";
 import Pickup from "./components/pages/Pickup/Pickup";
@@ -10,17 +9,19 @@ import Header from "./components/layout/Header";
 function App() {
   return (
     <>
-      <Header />
-      <main className="main">
+      <div className="flex min-h-screen overflow-hidden">
         <Sidebar />
+      <main className="main flex-1">
+      <Header />
         <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Delivery" element={<Delivery />} />
-          <Route path="/Pickup" element={<Pickup />} />
-          <Route path="/Catalog" element={<Catalog />} />
-          <Route path="/Cart" element={<Cart />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/pickup" element={<Pickup />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
+      </div>
     </>
   );
 }
