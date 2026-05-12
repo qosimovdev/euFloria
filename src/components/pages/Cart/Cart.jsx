@@ -1,12 +1,10 @@
 import { useState } from "react";
-// import Gul1 from "../../../assets/imgs/png/gul1.png";
-// import Gul2 from "../../../assets/imgs/png/gul2.png";
-// import Gul3 from "../../../assets/imgs/png/gul3.png";
+import Gul from "../../../assets/imgs/png/gul.png";  
 
 const orderItems = [
-  { id: 1, img: "", name: "Cactus", price: 8.0 },
-  { id: 2, img: "", name: "Plant", price: 8.0 },
-  { id: 3, img: "", name: "Green", price: 8.0 },
+  { id: 1, img: Gul, name: "Cactus", price: 8.0 },
+  { id: 2, img: Gul, name: "Plant", price: 8.0 },
+  { id: 3, img: Gul, name: "Green", price: 8.0 },
 ];
 
 export default function Cart() {
@@ -25,7 +23,7 @@ export default function Cart() {
   const total = subtotal + tax + shipping;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8 font-sans">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8 font-sans rounded-2xl">
       <div className="flex gap-10 max-w-4xl w-full">
        
         <div className="flex-1">
