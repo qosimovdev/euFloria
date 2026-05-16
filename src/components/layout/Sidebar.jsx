@@ -13,7 +13,7 @@ function Sidebar() {
   ];
 
   return (
-    <div className="w-78 h-screen text-white flex flex-col p-5">
+    <div className="w-78 h-screen text-white flex flex-col p-5 ">
 
       <h1 className="text-3xl mb-8 font-medium" style={{ marginTop: "1.5rem", marginLeft: "1rem" }} >EUFLORIA</h1>
       <nav className="flex flex-col gap-4 " style={{ marginTop: "1rem", marginLeft: "1rem" }}>
