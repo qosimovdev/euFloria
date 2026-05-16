@@ -1,10 +1,12 @@
 import { useState } from "react";
-import Gul from "../../../assets/imgs/png/gul.png";  
+import Kaktus from "../../../assets/imgs/png/kaktus.png"
+import Crop from "../../../assets/imgs/png/crop.png"
+import Minikaktus from "../../../assets/imgs/png/mini-kaktus.png"
 
 const orderItems = [
-  { id: 1, img: Gul, name: "Cactus", price: 8.0 },
-  { id: 2, img: Gul, name: "Plant", price: 8.0 },
-  { id: 3, img: Gul, name: "Green", price: 8.0 },
+  { id: 1, img: Kaktus, name: "Cactus", price: 8.0 },
+  { id: 2, img: Crop, name: "Plant", price: 8.0 },
+  { id: 3, img: Minikaktus, name: "Green", price: 8.0 },
 ];
 
 export default function Cart() {
@@ -23,7 +25,7 @@ export default function Cart() {
   const total = subtotal + tax + shipping;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8 font-sans rounded-2xl">
+    <div className="h-11/12 bg-gray-50 flex items-center justify-center p-8 font-sans rounded-2xl">
       <div className="flex gap-10 max-w-4xl w-full">
        
         <div className="flex-1">
@@ -141,7 +143,7 @@ export default function Cart() {
         </div>
 
        
-        <div className="w-72 bg-[#1a5c38] rounded-2xl p-5 text-white">
+        <div style={{marginLeft: "4rem"}} className="  w-82 bg-[#1a5c38] rounded-2xl p-5 text-white ">
           <h3 className="font-semibold text-lg mb-4">Order Summary</h3>
 
         

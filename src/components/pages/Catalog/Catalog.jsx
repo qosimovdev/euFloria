@@ -1,5 +1,11 @@
 import { useState } from "react";
 import Gul from "../../../assets/imgs/png/gul.png";  
+import Atirgul from "../../../assets/imgs/png/atirgul.png"
+import Archa from "../../../assets/imgs/png/archa.png"
+import Daraxt from "../../../assets/imgs/png/daraxt.png"
+import Kaktus from "../../../assets/imgs/png/kaktus.png"
+import Crop from "../../../assets/imgs/png/crop.png"
+import Minikaktus from "../../../assets/imgs/png/mini-kaktus.png"
 const plants = [
   {
     id: 1,
@@ -7,7 +13,7 @@ const plants = [
     oldPrice: 10,
     price: 8,
     liked: true,
-    img: Gul,
+    img: Kaktus,
   },
   {
     id: 2,
@@ -16,7 +22,7 @@ const plants = [
     price: 8,
     liked: false,
     active: true,
-    img: Gul
+    img: Atirgul
   },
   {
     id: 3,
@@ -24,7 +30,7 @@ const plants = [
     oldPrice: 10,
     price: 8,
     liked: false,
-    img: Gul,
+    img: Archa,
   },
   {
     id: 4,
@@ -32,7 +38,7 @@ const plants = [
     oldPrice: 10,
     price: 8,
     liked: false,
-    img: Gul,
+    img: Daraxt,
   },
   {
     id: 5,
@@ -40,7 +46,7 @@ const plants = [
     oldPrice: 10,
     price: 8,
     liked: false,
-    img: Gul,
+    img: Crop,
   },
   {
     id: 6,
@@ -48,7 +54,7 @@ const plants = [
     oldPrice: 10,
     price: 8,
     liked: false,
-    img: Gul,
+    img: Minikaktus,
   },
 ];
 
@@ -66,20 +72,20 @@ export default function Catalog() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8 font-sans">
-      <div className="max-w-4xl mx-auto">
+    <div  className="h-11/12 bg-gray-50 p-8 font-sans rounded-2xl">
+      <div style={{marginLeft: "4rem"} }   className="max-w-4xl mx-auto gap-10">
         
         <div className="flex items-center gap-6 mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">
+        <h1  style={{marginBottom: "2rem"}} className="text-3xl font-bold text-gray-900 tracking-tight">
             Best sellers
           </h1>
-          <button className="flex items-center gap-1 border border-gray-300 text-gray-700 text-sm px-4 py-1.5 rounded hover:bg-gray-100 transition-colors">
+          <button style={{marginBottom: "2rem"}}  className="flex items-center gap-1 border border-gray-300 text-gray-700 text-sm px-4 py-1.5 rounded hover:bg-gray-100 transition-colors">
             See More <span className="text-base">›</span>
           </button>
         </div>
 
        
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-10 items-center">
           {plants.map((plant) => (
             <div
               key={plant.id}
@@ -134,7 +140,7 @@ export default function Catalog() {
                       : "bg-white text-gray-800 border-gray-300 hover:bg-gray-50"
                   }`}
                 >
-                  {added[plant.id] ? "Added " : "Buy Now"}
+                  {added[plant.id] ? "Buy Now " : "Buy Now"}
                 </button>
               </div>
             </div>

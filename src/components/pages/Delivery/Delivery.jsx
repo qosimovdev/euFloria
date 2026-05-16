@@ -32,7 +32,7 @@ export default function Delivery() {
       <div className="bg-white rounded-2xl overflow-hidden shadow-lg w-[620px]">
 
         <div
-          className="px-10 pt-10 pb-12 relative overflow-hidden"
+          className="  px-10 pt-10 pb-12 relative overflow-hidden"
           style={{
             background: "linear-gradient(135deg, #7ecb7e 0%, #2d6a2d 55%, #1a4a1a 100%)",
           }}
